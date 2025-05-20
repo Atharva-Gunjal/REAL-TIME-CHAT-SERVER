@@ -1,18 +1,29 @@
-# REAL-TIME-CHAT-SERVER
+# Real-Time Chat Backend
 
-COMPANY: CODTECH IT SOLUTIONS
-NAME: ATHARVA GUNJAL
-INTERN ID:CT04DN811
-DOMAIN: BACKEND DEVELOPMENT
-DURATION: 4 WEEKS
-MENTOR: NEELA SANTOSH
+This is a real-time chat backend built with Node.js and Socket.IO.
+It supports:
+- Multiple chat rooms
+- Real-time messaging
+- User join/leave notifications
 
-**✅ TASK-2 Description: Real-Time Chat Backend**
-Developed a real-time chat server using Node.js and Socket.IO that supports:
+## Installation
 
-<< Multiple users and multiple chat rooms.
-<< Real-time messaging with instant broadcast.
-<< User join/leave notifications.
-<< User list updates for each room.
+```
+npm install
+```
 
-The server handles all real-time communication and maintains room-specific data. It enables seamless messaging between clients using WebSockets.
+## Run Server
+
+```
+npm start
+```
+
+## API
+
+Socket.IO events:
+- `joinRoom({ room, username })`
+- `sendMessage(message)`
+- `receiveMessage({ user, message })`
+- `userList`
+
+Developed for CodTech Internship Task-2.
